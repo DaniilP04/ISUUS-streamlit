@@ -32,14 +32,6 @@ class Project1:
                 st.dataframe(filtered_df, height=400, width=600)
 
 
-            Platform = df['Platform'].unique()
-            selected_platforms = st.multiselect("Select Platform(s)", options=Platform, default=Platform)
-
-            filtered_df = df[df['Platform'].isin(selected_platforms)]
-
-            st.dataframe(filtered_df, height=400, width=600)
-        else:
-            st.warning("Please upload a CSV file")
 
 
         st.markdown("""<style>
