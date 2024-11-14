@@ -3,11 +3,13 @@ import cv2
 import tempfile
 import numpy as np
 from pathlib import Path
+
+from Tools.scripts.make_ctype import flags
 from yt_dlp import YoutubeDL
 from streamlit_webrtc import webrtc_streamer, WebRtcMode
 
 class Project2:
-    def init(self):
+    def __init__(self):
         self.cap = None
 
     def app(self):
