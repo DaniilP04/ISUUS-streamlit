@@ -8,7 +8,7 @@ from streamlit_webrtc import webrtc_streamer, WebRtcMode
 
 class Project2:
     def init(self):
-        self.cap = None
+        self.cap = Non
 
     def app(self):
         st.title('Video stream in Streamlit')
